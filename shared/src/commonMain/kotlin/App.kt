@@ -22,6 +22,7 @@ fun App() {
         var greetingText by remember { mutableStateOf("Hello, World!") }
         var showImage by remember { mutableStateOf(false) }
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
+            Text("Hello Dallin!");
             Button(onClick = {
                 greetingText = "Hello, ${getPlatformName()}"
                 showImage = !showImage
